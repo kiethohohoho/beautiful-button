@@ -13,7 +13,7 @@ body {
 }
 
 .button {
-  padding: 20px;
+  padding: 40px;
   border: none;
   background-color: transparent;
   position: relative;
@@ -23,11 +23,11 @@ body {
 .button::before {
   position: absolute;
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   top: 0;
   left: 0;
-  border: 2px solid;
+  border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #ff5f6d, #ffc371);
   border-bottom: 0;
@@ -37,11 +37,11 @@ body {
 .button::after {
   position: absolute;
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   bottom: 0;
   right: 0;
-  border: 2px solid;
+  border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #ff5f6d, #ffc371);
   border-top: 0;
@@ -51,16 +51,18 @@ body {
 .span {
   color: #333;
   font-weight: 600;
+  font-size: large;
+  font-family: "segoe ui", Arial, sans-serif;
 }
 
 .span::before {
   position: absolute;
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   top: 0;
   right: 0;
-  border: 2px solid;
+  border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #07a787, #2cccff);
   border-bottom: 0;
@@ -70,13 +72,29 @@ body {
 .span::after {
   position: absolute;
   content: "";
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   bottom: 0;
   left: 0;
-  border: 2px solid;
+  border: 5px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, #07a787, #2cccff);
   border-top: 0;
   border-right: 0;
+}
+
+.darkBeforeBtn::before {
+  border-image-source: linear-gradient(to right, #000000, #000000);
+}
+
+.darkAfterBtn::after {
+  border-image-source: linear-gradient(to right, #000000, #000000);
+}
+
+.darkBeforeSpan::before {
+  border-image-source: linear-gradient(to right, #000000, #000000);
+}
+
+.darkAfterSpan::after {
+  border-image-source: linear-gradient(to right, #000000, #000000);
 }

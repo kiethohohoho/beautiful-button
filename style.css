@@ -100,3 +100,22 @@ body {
 .darkAfterSpan::after {
   border-image-source: linear-gradient(to right, #000000, #000000);
 }
+
+.darkBeforeBtn.darkAfterBtn .span {
+  color: #ff5f6d;
+}
+.darkBeforeBtn .span {
+  color: #ff5f6d;
+}
+.darkAfterBtn .span {
+  color: #ffc371;
+}
+.darkBeforeSpan.darkAfterSpan {
+  color: #07a787;
+}
+.darkBeforeSpan {
+  color: #07a787;
+}
+.darkAfterSpan {
+  color: #2cccff;
+}

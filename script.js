@@ -1,6 +1,10 @@
 const button = document.getElementsByClassName("button")[0];
 const span = document.getElementsByClassName("span")[0];
 
+const checkColorClass = (element, colorClass) => {
+  return element.classList.any((val) => val === colorClass);
+};
+
 const toggleClass = (element, classToggle, timeout) => {
   return new Promise((resolve, reject) => {
     try {

@@ -11,9 +11,7 @@ const toggleClass = (element, classToggle, timeout) => {
       element.classList.add(classToggle);
       const id = setTimeout(() => {
         element.classList.remove(classToggle);
-        console.log(1111);
       }, timeout);
-      //   clearTimeout(id);
       resolve();
     } catch (error) {
       reject(error);

@@ -18,14 +18,14 @@ const toggleClass = (element, classToggle, timeout) => {
 };
 
 setInterval(() => {
-  toggleClass(button, "darkBeforeBtn", 100)
+  toggleClass(button, "darkBeforeBtn", 200)
     .then(() => {
-      toggleClass(span, "darkBeforeSpan", 300);
+      toggleClass(span, "darkBeforeSpan", 400);
     })
     .then(() => {
       toggleClass(button, "darkAfterBtn", 600);
     })
     .then(() => {
-      toggleClass(span, "darkAfterSpan", 900);
+      toggleClass(span, "darkAfterSpan", 800);
     });
 }, 1000);

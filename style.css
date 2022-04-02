@@ -18,6 +18,7 @@ body {
   background-color: transparent;
   position: relative;
   cursor: pointer;
+  transition: border ease 2s;
 }
 
 .button::before {
@@ -53,6 +54,7 @@ body {
   font-weight: 600;
   font-size: large;
   font-family: "segoe ui", Arial, sans-serif;
+  transition: border ease 2s;
 }
 
 .span::before {
